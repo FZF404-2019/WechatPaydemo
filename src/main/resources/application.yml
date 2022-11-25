@@ -1,0 +1,40 @@
+wx:
+  mch:
+    mch-code: 微信商户号
+    serial-no:  证书序列号密文
+    private-key:  商户私钥内容密文
+    certificate:  平台证书内容密文
+
+server:
+  #端口号
+  port: 80
+  servlet:
+    #上下文路径
+    context-path: /demo
+  tomcat:
+    #最小线程数
+    min-spare-threads: 800
+    #最大线程数
+    max-threads: 2000
+    #最大链接数
+    max-connections: 6500
+    #最大等待队列长度
+    accept-count: 500
+    connection-timeout: 12000
+spring:
+#  profiles:
+#    active: dev
+  application:
+    #服务名称
+    name: WechatPaydemo
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: ALWAYS
+  servlet:
+    multipart:
+      # 单个文件的最大值
+      max-file-size: 20MB
+      # 上传文件总的最大值
+      max-request-size: 20MB
