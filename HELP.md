@@ -4,5 +4,5 @@
 例如：java -jar CertificateDownloader-1.1.jar -f /cert/apiclient_key.pem -k ghjsgwjegrw -m 1234568 -o . -s 32567GHJSGHJSG6435
 
 #关于商户秘钥
-配置文件上的秘钥内容是将对应秘钥证书中的内容进行了aes加密再配置到文件中的，项目启动时会将内容加密后再赋值给MchConfig对象属性
+配置文件上的秘钥内容是将对应秘钥证书中的内容进行了aes加密再配置到文件中的，项目启动时会将内容解密后再赋值给MchConfig对象属性
 
